@@ -8,6 +8,40 @@
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-    <h1>les 1</h1>
+    <h1 id="kopje">les 1</h1>
+   <p id="mkBlauw">maak kopje groen</p>
+   <p id="groen">paars</p>
+
+    <script> 
+     const kopje = document.getElementById("kopje");
+        const mkBlauw = document.getElementById('mkBlauw');
+        const groen = document.getElementById("groen"); 
+     
+        kopje.style.backgroundColor = "red";
+        groen.style.backgroundColor = "green";
+        mkBlauw.style.backgroundColor = "blue";
+
+
+      kopje.addEventListener('click', voeruitkopje);
+      mkBlauw.addEventListener('click',voeruitmkBlauw);
+      groen.addEventListener("click", voeruitgroen);
+
+      function voeruitgroen(){
+        groen.style.backgroundColor = "red";
+        groen.style.color = "purple";
+        
+      }
+      
+      function voeruitkopje(){
+        kopje.style.backgroundColor = "yellow";
+        kopje.style.color = "black";
+     }
+     function voeruitmkBlauw(){
+        document.body.style.backgroundColor = "green";
+        document.body.style.color = "blue";
+        mkBlauw.style.backgroundColor = "pink";
+     }
+
+    </script>
 </body>
 </html>
