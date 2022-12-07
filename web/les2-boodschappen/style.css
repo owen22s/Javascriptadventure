@@ -1,0 +1,10 @@
+body{
+    background-color: yellowgreen;
+}
+
+#koelkast{
+    background-color: lightgreen;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
